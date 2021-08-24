@@ -22,19 +22,19 @@ $(document).ready(function () {
         receive: function (event, ui) {
             $(this).find("div.item").css({ "border-right": "10px solid greenyellow", "text-align": "center" });
         }
-    });
+    }).disableSelection();
     $(".sortable3").sortable({
         connectWith: ".connectedSortable",
         receive: function (event, ui) {
             $(this).find("div.item").css({ "border-right": "10px solid red", "text-align": "center" });
         }
-    })
+    }).disableSelection();
     $(".sortable4").sortable({
         connectWith: ".connectedSortable",
         receive: function (event, ui) {
             $(this).find("div.item").css({ "border-right": "10px solid blue", "text-align": "center" });
         }
-    })
+    }).disableSelection();
     $(".delete-button").click(function () {
         $("#rem").find("li").remove();
 
