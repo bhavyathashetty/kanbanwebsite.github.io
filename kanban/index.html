@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Kanban Board</title>
+</head>
+
+<body class="dark">
+    <div class="link-div">
+        <input type="button" name="btndl" value="dark/light" class="dl-button" />
+    </div>
+    <div class="kanban">
+
+        <div class="container">
+            <h2>TODO</h2>
+
+            <ul class="sortable1 connectedSortable">
+                
+            </ul>
+            <div class="link-div">
+                <label for="new_task" class="tclass">Task:</label>
+                <input type="text" id="new_task" value="" />
+                <label for="task_des">Description:</label>
+                <input type="text" id="task_des" value="" />
+                <input type="button" name="btnAddNew" value="Add" class="add-button" />
+            </div>
+        </div>
+        <div class="container">
+            <h2>In-Progress</h2>
+            <ul class="sortable2 connectedSortable">
+                
+            </ul>
+        </div>
+        <div class="container">
+            <h2> Wait For Verification</h2>
+            <ul class="sortable3 connectedSortable">
+              
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Done</h2>
+            <ul class="sortable4 connectedSortable" id="rem">
+            </ul>
+            <div class="link-div">
+                <input type="button" name="btnDeleteDone" value="Delete" class="delete-button" />
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
